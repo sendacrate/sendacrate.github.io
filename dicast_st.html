@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <!-- <script type="text/javascript" src="/js/lib/dummy.js"></script>
+  <script type="text/javascript" src="./jquery.csv.js"></script>
+  <link rel="stylesheet" type="text/css" href="/css/result-light.css">-->
+  <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css"> 
+  <style type="text/css">
+    body {
+      background: whitesmoke;
+      font-family: 'Roboto Condensed', sans-serif;
+    }
+
+    nav ul {
+    list-style-type: none;
+    margin: -8px;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    }
+
+    nav li {
+        float: left;
+    }
+
+    nav li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    nav li a:hover:not(.active){
+        background-color: #111;
+    }
+
+    nav .active {
+        background-color: #ccc;
+        color: #17243B;
+    }
+    select{
+     -webkit-appearance: button;
+     -webkit-border-radius: 2px;
+     -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+     -webkit-padding-end: 0px;
+     -webkit-padding-start: 2px;
+     -webkit-user-select: none;
+     background-image: url(http://i62.tinypic.com/15xvbd5.png), -webkit-linear-gradient(#FAFAFA, #F4F4F4 40%, #E5E5E5);
+     background-position: 97% center;
+     background-repeat: no-repeat;
+     border: 1px solid #AAA;
+     color: #555;
+     font-size: 14px;
+     margin: 5px;
+     overflow: hidden;
+     padding: 5px 10px;
+     text-overflow: ellipsis;
+     white-space: nowrap;
+     width: 150px;
+    }
+    input, button {
+      /*-webkit-appearance: button;*/
+      -webkit-border-radius: 2px;
+      -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+      -webkit-padding-end: 0px;
+      -webkit-padding-start: 2px;
+      -webkit-user-select: none;
+      /*background-image: url(http://i62.tinypic.com/15xvbd5.png), -webkit-linear-gradient(#FAFAFA, #F4F4F4 40%, #E5E5E5);*/
+      /*background-position: 97% center;
+      background-repeat: no-repeat;*/
+      border: 1px solid #AAA;
+      color: #555;
+      font-size: 14px;
+      margin: 5px;
+      overflow: hidden;
+      padding: 5px 10px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+
+    }
+    input{
+      width: 150px;
+    }
+    button{
+      width: 75px;
+    }
+    #loading {
+      padding-top: 1%;
+      width: 5%;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      color: black;
+    }
+    body{
+      margin-left: -8px;
+      margin-right: -8px;
+    }
+    #banner{
+      /*background-size: cover;*/
+      display:flex;
+  		width: 100%;
+  		justify-content: center;
+  		/*align-items: center;*/
+  		position: relative;
+      /*height:20%;*/
+      /*padding-top: 3px;*/
+      margin-top: -8px;
+      margin-left: -8px;
+      margin-right: -8px;
+    }
+    #info{
+      display: flex;
+      width:100%;
+    }
+    #right-div,#left-div{
+      width: 50%;
+    }
+    aside {
+    background: #1f8dd6; /* same color as selected state on site menu */
+    padding: 0.3em 1em;
+    border-radius: 3px;
+    color: #fff;
+    margin-bottom: 2em;
+}
+textarea {
+  width: 100%;
+}
+.content-head {
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin: 2em 0 1em;
+}
+.is-center {
+  text-align: center;
+}
+.button-success {
+  color: white;
+  border-radius: 4px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  background: rgb(28, 184, 65); /* this is a green */
+}
+.button-xlarge {
+  font-size: 125%;
+}
+button {
+  float: right;
+}
+#name, #email {
+  width: 50%;
+}
+#message{
+  width:75%;
+}
+  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+
+  </style>
+  <title> SendACrate</title>
+
+  <script type='text/javascript'>
+    //<![CDATA[
+    window.onload = function() {
+
+      $(document).ready(function() {
+
+        $.ajaxSetup({
+          beforeSend: function() {
+            // show gif here, eg:
+            $("#loading").show();
+          },
+          complete: function() {
+            // hide gif here, eg:
+            $("#loading").hide();
+          }
+        });
+
+    });
+      //});
+
+
+
+    } //]]>
+  </script>
+
+
+</head>
+
+<body>
+  <!-- <nav>
+  <ul>
+    <li><a class="active">SendACrate</a></li>
+    <li><a href="/dicast_nt.html">About</a></li>
+    <li><a class = "current" href="/dicast_st.html">Sign-Up</a></li>
+  </ul>
+</nav> -->
+<img id = "banner" src= "sac-banner2.jpg"></img>
+<div id ="info">
+  <div id ="left-div">
+     <!-- <p></p> -->
+  </div>
+  <div id = "right-div">
+    <form id="gform" method="POST" class="pure-form pure-form-stacked" data-email="example@email.net"
+  action="https://script.google.com/macros/s/AKfycbw8UbiMvQsD2LOM-hTfWy8sibCF0ZbD75UoS86ZCUUzxfSJt4A/exec">
+    <!-- change the form action to your script url -->
+
+    <!-- <fieldset class="pure-group"> -->
+      <label for="name">Name: </label>
+      <input id="name" name="name" placeholder="Full Name" />
+    <!-- </fieldset> -->
+    <br>
+    <label for="email">Your Email Address:</label>
+    <input id="email" name="email" type="email" value=""
+    required placeholder="your.name@email.com"/>
+    <span id="email-invalid" style="display:none">
+      Must be a valid email address</span>
+    <!-- <fieldset class="pure-group"> -->
+
+    <!-- </fieldset> -->
+    <br>
+    <!-- <fieldset class="pure-group"> -->
+    <label for="message">Message: </label>
+    <textarea id="message" name="message" rows="10"
+    placeholder="Tell us what's on your mind..."></textarea>
+    <!-- </fieldset> -->
+    <br>
+    <!-- <fieldset class="pure-group"> -->
+      <!-- <label for="color">Favourite Color: </label>
+      <input id="color" name="color" placeholder="green" /> -->
+    <!-- </fieldset> -->
+    <br>
+    <button class="button-success pure-button button-xlarge">
+      <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
+
+  </form>
+  <div style="display:none;" id="thankyou_message">
+      <h2>Thanks for contacting us!
+        We will get back to you soon!</h2>
+    </div>
+
+  </div>
+</div>
+
+<script data-cfasync="false" type="text/javascript"
+  src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <!-- <script type="text/javascript" src="./jquery.csv.js"></script> -->
+
+
+  <script>
+    // tell the embed parent frame the height of the content
+    if (window.parent && window.parent.parent) {
+      window.parent.parent.postMessage(["resultsFrame", {
+        height: document.body.getBoundingClientRect().height,
+        slug: "ahbkabpt"
+      }], "*")
+    }
+  </script>
+
+</body>
+
+</html>
