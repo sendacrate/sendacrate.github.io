@@ -170,6 +170,7 @@ button {
   /*width: 40px;*/
   /*padding-right: 5%;*/
   float: left;
+  padding-left: 10%;
 }
 #name, #email {
   width: 30%;
@@ -277,6 +278,25 @@ td {
    </tr>
     </table>
   </div>
+  <div id = "Get Signed Up:">
+    <form id="gform" method="POST" class="pure-form pure-form-stacked" data-email="example@email.net"
+  action="https://script.google.com/macros/s/AKfycbz0SQDrJ8-oFEh6iN8FxzIJ4O5sx4HLOe4FevKk_W-IPy-WwJ0/exec">
+    <!-- change the form action to your script url -->
+
+    <!-- <fieldset class="pure-group"> -->
+
+    <label for="email">Your Email Address:</label>
+    <input id="email" name="email" type="email" value=""
+    required placeholder="your.name@email.com"/>
+    <span id="email-invalid" style="display:none">
+      Must be a valid email address</span>
+
+    <br>
+    <button class="button-success pure-button button-large">
+      &nbsp;Sign Up</button>
+
+  </form>
+  </div>
   <!-- <div id = "right-div"> -->
     <form id="gform" method="POST" class="pure-form pure-form-stacked" data-email="example@email.net"
   action="https://script.google.com/macros/s/AKfycbw8UbiMvQsD2LOM-hTfWy8sibCF0ZbD75UoS86ZCUUzxfSJt4A/exec">
@@ -284,7 +304,7 @@ td {
 
     <!-- <fieldset class="pure-group"> -->
     <div class = "row">
-    <h3>Get signed up now:</h3>
+    <h3>Contact Us:</h3>
       <label for="name">Name: </label>
       <input id="name" name="name" placeholder="Full Name" />
     <!-- </fieldset> -->
