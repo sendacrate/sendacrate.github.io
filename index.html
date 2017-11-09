@@ -177,20 +177,20 @@ button {
 #message{
   width:50%;
 }
-#contact-us{
-  display: flex;
-  width: 100%;
-}
-#right-form{
-  width: 50%;
-}
-#left-form{
-  width: 50%;
-}
 table {
     border-collapse: collapse;
 }
-
+label{
+    display: inline-block;
+    float: left;
+    clear: left;
+    /*width: 250px;*/
+    text-align: right;
+}
+input {
+  display: inline-block;
+  float: left;
+}
 td {
     padding-top: 1em;
     padding-bottom: 1em;
@@ -279,38 +279,25 @@ td {
     <!-- change the form action to your script url -->
 
     <!-- <fieldset class="pure-group"> -->
-    <div id = "contact-us">
     <h3>Get signed up now:</h3>
-    <div id = 'right-form'>
       <label for="name">Name: </label>
-    </div>
-    <div id = 'left-form'>
       <input id="name" name="name" placeholder="Full Name" />
-    </div>
     <!-- </fieldset> -->
     <br>
-    <div id = 'right-form'>
+
     <label for="email">Your Email Address:</label>
-  </div>
-  <div id = 'left-form'>
     <input id="email" name="email" type="email" value=""
     required placeholder="your.name@email.com"/>
     <span id="email-invalid" style="display:none">
       Must be a valid email address</span>
-    </div>
     <!-- <fieldset class="pure-group"> -->
 
     <!-- </fieldset> -->
     <br>
     <!-- <fieldset class="pure-group"> -->
-    <div id = 'right-form'>
     <label for="message">Message: </label>
-  </div>
-  <div id = 'left-form'>
     <textarea id="message" name="message" rows="10"
     placeholder="Tell us what's on your mind..."></textarea>
-  </div>
-</div>
     <!-- </fieldset> -->
     <br>
     <!-- <fieldset class="pure-group"> -->
