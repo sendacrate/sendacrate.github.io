@@ -177,20 +177,24 @@ button {
 #message{
   width:50%;
 }
+.row{
+  position: relative;
+  text-align: center;
+}
 table {
     border-collapse: collapse;
 }
-label{
+/*label{
     display: inline-block;
     float: left;
     clear: left;
-    /*width: 250px;*/
+    width: 250px;
     text-align: right;
 }
 input {
   display: inline-block;
   float: left;
-}
+}*/
 td {
     padding-top: 1em;
     padding-bottom: 1em;
@@ -279,6 +283,7 @@ td {
     <!-- change the form action to your script url -->
 
     <!-- <fieldset class="pure-group"> -->
+    <div class = "row">
     <h3>Get signed up now:</h3>
       <label for="name">Name: </label>
       <input id="name" name="name" placeholder="Full Name" />
@@ -313,7 +318,7 @@ td {
       <h2>Thanks for contacting us!
         We will get back to you soon!</h2>
     </div>
-
+</div>
   <!-- </div> -->
 </div>
 
