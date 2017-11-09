@@ -166,17 +166,25 @@ textarea {
 .button-xlarge {
   font-size: 125%;
 }
-button {
+#send button {
   /*width: 40px;*/
   /*padding-right: 5%;*/
   float: left;
   margin-left: 10%;
+}
+#sign-up-button button{
+  float: right;
 }
 #name, #email {
   width: 30%;
 }
 #message{
   width:50%;
+}
+#sign-up{
+  padding-top: 20%;
+  padding-bottom:20%;
+  background-color: #000;
 }
 .row{
   position: relative;
@@ -278,9 +286,11 @@ td {
    </tr>
     </table>
   </div>
-  <div id = "Get Signed Up:">
+  <div id = "sign-up">
+    <h3>Sign-Up For Updates:</h3>
     <form id="gform" method="POST" class="pure-form pure-form-stacked" data-email="example@email.net"
   action="https://script.google.com/macros/s/AKfycbz0SQDrJ8-oFEh6iN8FxzIJ4O5sx4HLOe4FevKk_W-IPy-WwJ0/exec">
+
     <!-- change the form action to your script url -->
 
     <!-- <fieldset class="pure-group"> -->
@@ -290,7 +300,7 @@ td {
     required placeholder="your.name@email.com"/>
     <span id="email-invalid" style="display:none">
       Must be a valid email address</span>
-      <button class="button-success pure-button button-large">
+      <button id = "sign-up-button" class="button-success pure-button button-large">
         Sign Up</button>
     <br>
 
@@ -330,7 +340,7 @@ td {
       <input id="color" name="color" placeholder="green" /> -->
     <!-- </fieldset> -->
     <br>
-    <button class="button-success pure-button button-xlarge">
+    <button id = "send" class="button-success pure-button button-xlarge">
       <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
 
   </form>
