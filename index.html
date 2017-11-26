@@ -1,392 +1,197 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
-<head>
-  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-  <meta name="robots" content="noindex, nofollow">
-  <meta name="googlebot" content="noindex, nofollow">
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109419597-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <head>
 
-  gtag('config', 'UA-109419597-1');
-</script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-  <!-- <script type="text/javascript" src="/js/lib/dummy.js"></script>
-  <script type="text/javascript" src="./jquery.csv.js"></script>
-  <link rel="stylesheet" type="text/css" href="/css/result-light.css">-->
-  <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
-  <style type="text/css">
-    body {
-      background: whitesmoke;
-      font-family: 'Roboto Condensed', sans-serif;
-    }
+    <title>BundleShack</title>
 
-    nav ul {
-    list-style-type: none;
-    margin: -8px;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    }
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    nav li {
-        float: left;
-    }
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 
-    nav li a {
-        display: block;
-        color: white;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-    }
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
 
-    nav li a:hover:not(.active){
-        background-color: #111;
-    }
+    <!-- Custom styles for this template -->
+    <link href="css/creative.min.css" rel="stylesheet">
 
-    nav .active {
-        background-color: #ccc;
-        color: #17243B;
-    }
-    select{
-     -webkit-appearance: button;
-     -webkit-border-radius: 2px;
-     -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
-     -webkit-padding-end: 0px;
-     -webkit-padding-start: 2px;
-     -webkit-user-select: none;
-     background-image: url(http://i62.tinypic.com/15xvbd5.png), -webkit-linear-gradient(#FAFAFA, #F4F4F4 40%, #E5E5E5);
-     background-position: 97% center;
-     background-repeat: no-repeat;
-     border: 1px solid #AAA;
-     color: #555;
-     font-size: 14px;
-     margin: 5px;
-     overflow: hidden;
-     padding: 5px 10px;
-     text-overflow: ellipsis;
-     white-space: nowrap;
-     width: 150px;
-    }
-    input, button {
-      /*-webkit-appearance: button;*/
-      -webkit-border-radius: 2px;
-      -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
-      -webkit-padding-end: 0px;
-      -webkit-padding-start: 2px;
-      -webkit-user-select: none;
-      /*background-image: url(http://i62.tinypic.com/15xvbd5.png), -webkit-linear-gradient(#FAFAFA, #F4F4F4 40%, #E5E5E5);*/
-      /*background-position: 97% center;
-      background-repeat: no-repeat;*/
-      border: 1px solid #AAA;
-      color: #555;
-      font-size: 14px;
-      margin: 5px;
-      overflow: hidden;
-      padding: 5px 10px;
-      text-overflow: ellipsis;
-      white-space: nowrap;
+  </head>
 
-    }
-    input{
-      width: 75px;
-    }
-    button{
-      width: 75px;
-    }
-    #loading {
-      padding-top: 1%;
-      width: 5%;
-      text-align: center;
-      margin-left: auto;
-      margin-right: auto;
-      color: black;
-    }
-    body{
-      /*margin-left: -8px;*/
-      margin-right: -8px;
-    }
-    #banner{
-      /*background-size: cover;*/
-      display:flex;
-  		width: 101%;
-  		justify-content: center;
-  		/*align-items: center;*/
-  		position: relative;
-      /*height:20%;*/
-      /*padding-top: 3px;*/
-      margin-top: -8px;
-      margin-left: -8px;
-      margin-right: -8px;
-    }
-    /*#info{
-      display: flex;
-      width:100%;
-    }*/
-    /*#right-div,#left-div{
-      width: 50%;
-    }*/
-    /*#left-div{
-      margin-left: 8px;
-      padding-right: 3%;
-      padding-left: 3%;
-      padding-top: 1%;
-    }*/
-    #left-div{
-      padding-top: 5%;
-      padding-bottom: 5%;
-    }
-    #left-div h3{
-      text-align: center;
-    }
-    aside {
-    background: #1f8dd6; /* same color as selected state on site menu */
-    padding: 0.3em 1em;
-    border-radius: 3px;
-    color: #fff;
-    margin-bottom: 2em;
-}
-textarea {
-  width: 60%;
-}
-.content-head {
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  margin: 2em 0 1em;
-}
-.is-center {
-  text-align: center;
-}
-.button-success {
-  color: white;
-  border-radius: 4px;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-  background: rgb(28, 184, 65); /* this is a green */
-  width: 100px;
-}
-.button-xlarge {
-  font-size: 125%;
-}
-#send button {
-  /*width: 40px;*/
-  /*padding-right: 5%;*/
-  float: left;
-  margin-left: 10%;
-}
-#sign-up-button button{
-  float: right;
-}
-#name, #email {
-  width: 30%;
-}
-#message{
-  width:50%;
-}
-#sign-up{
-  padding-top: 10%;
-  padding-bottom:10%;
-  background-color: #4C4C4C;
-  margin-left: -8px;
-  text-align: center;
-}
-#sign-up h3{
-  color: whitesmoke;
-}
-#sign-up label {
-  color: whitesmoke;
-}
-.row{
-  position: relative;
-  text-align: center;
-  padding-top: 5%;
-}
-table {
-    border-collapse: collapse;
-    margin-left: 24%;
-    /*width: auto;*/
-}
-/*label{
-    display: inline-block;
-    float: left;
-    clear: left;
-    width: 250px;
-    text-align: right;
-}
-input {
-  display: inline-block;
-  float: left;
-}*/
-td {
-    padding-top: 1em;
-    padding-bottom: 1em;
-    padding-left: 10px;
-}
-  </style>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <style>
+  <body id="page-top">
 
-  </style>
-  <title> SendACrate</title>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">BundleShack</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-  <script type='text/javascript'>
-    //<![CDATA[
-    window.onload = function() {
+    <header class="masthead text-center text-white d-flex">
+      <div class="container my-auto">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <h1 class="text-uppercase">
+              <strong>Command Your Financing and Your Future.</strong>
+            </h1>
+            <hr>
+          </div>
+          <div class="col-lg-8 mx-auto">
+            <p class="text-faded mb-5">Your entire financial report, simplified.</p>
+            <!-- <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a> -->
+          </div>
+        </div>
+      </div>
+    </header>
 
-      $(document).ready(function() {
+    <section class="bg-primary" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <h2 class="section-heading text-white">We've got what you need, sign-up for updates here today!</h2>
+            <hr class="light my-4">
+            <p class="text-faded mb-4">BundleShack is a free service that helps you
+            track your finances and helps with budgeting money. It cuts out all
+          of the unecessary widgets leaving you with a simple but smart interface. </p>
+          <form id="gform" method="POST" class="pure-form pure-form-stacked" data-email="example@email.net"
+        action="https://script.google.com/macros/s/AKfycbz0SQDrJ8-oFEh6iN8FxzIJ4O5sx4HLOe4FevKk_W-IPy-WwJ0/exec">
 
-        $.ajaxSetup({
-          beforeSend: function() {
-            // show gif here, eg:
-            $("#loading").show();
-          },
-          complete: function() {
-            // hide gif here, eg:
-            $("#loading").hide();
-          }
-        });
+          <!-- change the form action to your script url -->
 
-    });
-      //});
+          <!-- <fieldset class="pure-group"> -->
+
+          <label for="email">Your Email Address:</label>
+          <input id="email" name="email" type="email" value=""
+          required placeholder="your.name@email.com"/>
+          <span id="email-invalid" style="display:none">
+            Must be a valid email address</span>
+            <br>
+            <button id = "sign-up-button" class="btn btn-light btn-xl">
+              Sign-Up</button>
+          <br>
 
 
+        </form>
+            <!-- <a class="btn btn-light btn-xl js-scroll-trigger" href="#services">Sign-Up for Updates!</a> -->
+          </div>
+        </div>
+      </div>
+    </section>
 
-    } //]]>
-  </script>
+    <section id="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">At Your Service</h2>
+            <hr class="my-4">
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fa fa-4x fa-desktop text-primary mb-3 sr-icons"></i>
+              <h3 class="mb-3">Simple</h3>
+              <p class="text-muted mb-0">Keep track of all your money in one spot.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fa fa-4x fa-refresh text-primary mb-3 sr-icons"></i>
+              <h3 class="mb-3">Up to Date</h3>
+              <p class="text-muted mb-0">Automatically sync data from your banks, credit cards, and investments.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fa fa-4x fa-shopping-bag text-primary mb-3 sr-icons"></i>
+              <h3 class="mb-3">Planning Tool</h3>
+              <p class="text-muted mb-0">Easily plan for large purchases.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fa fa-4x fa-usd text-primary mb-3 sr-icons"></i>
+              <h3 class="mb-3"> 100% Free</h3>
+              <p class="text-muted mb-0">You pay NOTHING.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- <section class="bg-dark text-white">
+      <div class="container text-center">
+        <h2 class="mb-4">Free Download at Start Bootstrap!</h2>
+        <a class="btn btn-light btn-xl sr-button" href="http://startbootstrap.com/template-overviews/creative/">Download Now!</a>
+      </div>
+    </section> -->
 
-</head>
+    <section class="bg-dark text-white" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <h2 class="section-heading">Let's Get In Touch!</h2>
+            <hr class="my-4">
+            <p class="mb-5">If you have any questions or comments, send us an email and we will get back to you as soon as possible!</p>
+          </div>
+        </div>
+        <div class="row">
+          <!-- <div class="col-lg-4 ml-auto text-center">
+            <i class="fa fa-phone fa-3x mb-3 sr-contact"></i>
+            <p>123-456-6789</p>
+          </div> -->
+          <div class="col-lg-4 mx-auto text-center">
+            <i class="fa fa-envelope-o fa-3x mb-3 sr-contact"></i>
+            <p>
+              <a href="mailto:contactus@bundleshack.com">contactus@bundleshack.com</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<body>
-  <!-- <nav>
-  <ul>
-    <li><a class="active">SendACrate</a></li>
-    <li><a href="/dicast_nt.html">About</a></li>
-    <li><a class = "current" href="/dicast_st.html">Sign-Up</a></li>
-  </ul>
-</nav> -->
-<img id = "banner" src= "bgcopy.png"></img>
-<div id ="info">
-  <div id ="left-div">
-    <h3>Why Choose Us?</h3>
-    <table>
-      <tr>
-        <td align="justify"><i class="fa fa-desktop" aria-hidden="true"></i></td>
-        <td>Keep track of all your money in one spot.</td>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-      </tr>
-      <tr>
-      <td align="justify"><i class="fa fa-refresh" aria-hidden="true"></i></td>
-      <td>Automatically sync data from your banks, credit cards, and investments.</td>
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
 
-      <tr>
-        <td align="justify"><i class="fa fa-shopping-bag" aria-hidden="true"></i></td>
-        <td>Easily plan for large purchases.</td>
-      </tr>
-      <tr>
-        <td align="justify"><i class="fa fa-usd" style= "padding-left: 5px" aria-hidden="true"></i></td>
-        <td>You pay NOTHING.</td>
-      </tr>
-
-
-
-    <!-- <br><br>
-
-    <br><br>
-
-    <br><br> -->
-
-   </tr>
-    </table>
-  </div>
-  <div id = "sign-up">
-    <h3>Sign-Up For Updates:</h3>
-    <form id="gform" method="POST" class="pure-form pure-form-stacked" data-email="example@email.net"
-  action="https://script.google.com/macros/s/AKfycbz0SQDrJ8-oFEh6iN8FxzIJ4O5sx4HLOe4FevKk_W-IPy-WwJ0/exec">
-
-    <!-- change the form action to your script url -->
-
-    <!-- <fieldset class="pure-group"> -->
-
-    <label for="email">Your Email Address:</label>
-    <input id="email" name="email" type="email" value=""
-    required placeholder="your.name@email.com"/>
-    <span id="email-invalid" style="display:none">
-      Must be a valid email address</span>
-      <button id = "sign-up-button" class="button-success pure-button button-large">
-        Sign Up</button>
-    <br>
-
-
-  </form>
-  </div>
-  <!-- <div id = "right-div"> -->
-    <form id="gform" method="POST" class="pure-form pure-form-stacked" data-email="example@email.net"
-  action="https://script.google.com/macros/s/AKfycbw8UbiMvQsD2LOM-hTfWy8sibCF0ZbD75UoS86ZCUUzxfSJt4A/exec">
-    <!-- change the form action to your script url -->
-
-    <!-- <fieldset class="pure-group"> -->
-    <div class = "row">
-    <h3>Contact Us:</h3>
-      <label for="name">Name: </label>
-      <input id="name" name="name" placeholder="Full Name" />
-    <!-- </fieldset> -->
-    <br>
-
-    <label for="email">Your Email Address:</label>
-    <input id="email" name="email" type="email" value=""
-    required placeholder="your.name@email.com"/>
-    <span id="email-invalid" style="display:none">
-      Must be a valid email address</span>
-    <!-- <fieldset class="pure-group"> -->
-
-    <!-- </fieldset> -->
-    <br>
-    <!-- <fieldset class="pure-group"> -->
-    <label for="message">Message: </label>
-    <textarea id="message" name="message" rows="10"
-    placeholder="Tell us what's on your mind..."></textarea>
-    <!-- </fieldset> -->
-    <br>
-    <!-- <fieldset class="pure-group"> -->
-      <!-- <label for="color">Favourite Color: </label>
-      <input id="color" name="color" placeholder="green" /> -->
-    <!-- </fieldset> -->
-    <br>
-    <button id = "send" class="button-success pure-button button-xlarge">
-      <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
-
-  </form>
-  <div style="display:none;" id="thankyou_message">
-      <h2>Thanks for contacting us!
-        We will get back to you soon!</h2>
-    </div>
-</div>
-  <!-- </div> -->
-</div>
-
-<script data-cfasync="false" type="text/javascript"
-  src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
-  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <!-- <script type="text/javascript" src="./jquery.csv.js"></script> -->
-
-
-  <script>
-    // tell the embed parent frame the height of the content
-    if (window.parent && window.parent.parent) {
-      window.parent.parent.postMessage(["resultsFrame", {
-        height: document.body.getBoundingClientRect().height,
-        slug: "ahbkabpt"
-      }], "*")
-    }
-  </script>
-
-</body>
+    <!-- Custom scripts for this template -->
+    <script src="js/creative.min.js"></script>
+    <script data-cfasync="false" type="text/javascript"
+      src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
+  </body>
 
 </html>
