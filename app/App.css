@@ -129,7 +129,7 @@ a:hover{
 .check-in{
   color: rgba(223,223,223,5.0);
   text-align: left;
-  padding-top: 10px;
+  padding-top: 20px;
 }
 
 .flight-det{
@@ -150,6 +150,7 @@ a:hover{
   border-width: 1px;
   border-right: none;
   border-left: none;
+  border-bottom: none;
   text-align: left;
   padding-left: 10px;
   display:flex;
@@ -158,6 +159,7 @@ a:hover{
   margin-bottom: 0;
 }
 .arrow{
-  float:right;
+  position:absolute;
+  right:10px;
 }
 /* h5#arr_air */
