@@ -124,13 +124,15 @@ a:hover{
 
 #arr_air{
   padding-top: 10px;
+  margin-left: 60px;
 }
 
 .flight-det{
   padding-top: 20px;
-  margin: 0 auto;
+  text-align: left;
+  /* margin: 0 auto; */
 }
 
 .det-table{
-  margin: 0 auto;
+  margin: 10px;
 }
