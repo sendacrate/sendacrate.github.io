@@ -32,11 +32,11 @@ $(document).ready(function() {
             document.getElementById('gate').innerHTML = gate
             document.getElementById('arr').innerHTML = arr_dt
             document.getElementById('arr-air').innerHTML = arr_airport
-
+            document.getElementById('city-det').innerHTML = param1+", "+date
                 // booking_url = "booking.html?city="+name+"&param2=22"
                 // $('#myIframe').attr('src', booking_url);
         }
-        document.getElementById('city-det').innerHTML = param1+", "+date
+
       }
 
     })
