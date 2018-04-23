@@ -4,12 +4,13 @@ $(document).ready(function() {
   // console.log("iuoihoh",param1)
   url = "/app/details.html?city="+param1
   $('#myIframe2').attr('src', url);
-  document.getElementById('city').innerHTML = param1
+
   url = '/app/itin.json';
   // console.log("hi")
 
   $.getJSON(url, function(data) {
       for(var i=0;i<data.bookings.length;i++){
+        date = data.bookings[i]['startDate']+"-"+data.bookings[i]['endDate']
         city= data.bookings[i]['city']
         console.log(data.bookings[i]['flight-info'][0]['res-num'])
         resnum= data.bookings[i]['flight-info'][0]['res-num']
@@ -36,6 +37,7 @@ $(document).ready(function() {
                 // $('#myIframe').attr('src', booking_url);
         }
       }
+      document.getElementById('city').innerHTML = param1+" ,"+date
     })
 })
 function myFunction(){
