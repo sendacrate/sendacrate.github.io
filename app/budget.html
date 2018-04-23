@@ -22,19 +22,19 @@
     .radial-progress {
     	@circle-size: 120px;
     	@circle-background: #d6dadc;
-    	@circle-color: #97a71d;
+    	@circle-color: rgba(223,223,223,1.0);
     	@inset-size: 90px;
     	@inset-color: #fbfbfb;
     	@transition-length: 1s;
     	@shadow: 6px 6px 10px rgba(0,0,0,0.2);
-    	@percentage-color: #97a71d;
+    	@percentage-color: rgba(223,223,223,1.0);
     	@percentage-font-size: 22px;
     	@percentage-text-width: 57px;
 
     	margin: 50px;
     	width:  @circle-size;
     	height: @circle-size;
-
+      margin: 0 auto;
     	background-color: @circle-background;
     	border-radius: 50%;
     	.circle {
@@ -76,6 +76,7 @@
     			height:   @percentage-font-size;
     			width:    @percentage-text-width;
     			overflow: hidden;
+          text-align: left;
 
     			position: absolute;
     			top:      (@inset-size - @percentage-font-size) / 2;
