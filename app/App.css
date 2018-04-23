@@ -152,5 +152,12 @@ a:hover{
   border-left: none;
   text-align: left;
   padding-left: 10px;
+  display:flex;
+}
+.other p{
+  margin-bottom: 0;
+}
+.arrow{
+  float:right;
 }
 /* h5#arr_air */
