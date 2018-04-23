@@ -113,3 +113,11 @@ a:hover{
    text-align: left;
    margin-left: 15px;
  }
+
+ .key{
+  font-weight:bold;
+ }
+
+ .value{
+   color: rgba(72,170,255,1.0)
+ }
