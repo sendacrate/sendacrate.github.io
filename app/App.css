@@ -121,3 +121,12 @@ a:hover{
  .value{
    color: rgba(72,170,255,1.0)
  }
+
+.arr_air{
+  padding-top: 10px;
+}
+
+.flight-det{
+  padding-top: 10px;
+  margin: 0 auto;
+}
