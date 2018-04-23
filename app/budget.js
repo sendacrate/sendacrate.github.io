@@ -1,4 +1,4 @@
-$('head style[type="App.css"]').attr('type', 'less');
+$('head style[type="text/css"]').attr('type', 'text/less');
 less.refreshStyles();
 window.randomize = function() {
 	$('.radial-progress').attr('data-progress', Math.floor(0.478 * 100));
