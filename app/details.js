@@ -36,8 +36,9 @@ $(document).ready(function() {
                 // booking_url = "booking.html?city="+name+"&param2=22"
                 // $('#myIframe').attr('src', booking_url);
         }
+        document.getElementById('city').innerHTML = param1+", "+date
       }
-      document.getElementById('city').innerHTML = param1+" ,"+date
+
     })
 })
 function myFunction(){
