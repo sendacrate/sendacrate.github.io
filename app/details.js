@@ -4,7 +4,7 @@ $(document).ready(function() {
   // console.log("iuoihoh",param1)
   url = "/app/details.html?city="+param1
   $('#myIframe2').attr('src', url);
-  document.getElementById('city').innerHTML = param1
+  // document.getElementById('city').innerHTML = param1
   url = '/app/itin.json';
   // console.log("hi")
 
@@ -36,7 +36,7 @@ $(document).ready(function() {
                 // booking_url = "booking.html?city="+name+"&param2=22"
                 // $('#myIframe').attr('src', booking_url);
         }
-        // document.getElementById('city').innerHTML = param1+", "+date
+        document.getElementById('city-det').innerHTML = param1+", "+date
       }
 
     })
