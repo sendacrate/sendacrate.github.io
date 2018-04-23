@@ -4,11 +4,12 @@ $(document).ready(function() {
   console.log("iuoihoh",param1)
   url = "/details.html?city="+param1
   $('#myIframe2').attr('src', url);
+  document.getElementById('city').innerHTML = param1
 })
 function myFunction(){
   var param1 = getParamValue('city');
   url = "/details.html?city="+param1
   $('#myIframe2').attr('src', url);
-  window.location.href = "/details.html?city="+param1;
+  window.location.href = "/details.html";
   // window.top.location.href ="details.html";
 }
