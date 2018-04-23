@@ -6,7 +6,14 @@
             "endDate" : "5/7/18",
             "flight-info": [{
               "res-num": "WX4H6",
-              "flight-num": "SW 164"
+              "flight-num": "SW 164",
+              "from": "Denver International Airport",
+              "to": "Seattle-Tacoma International Airport",
+              "dep": "5/4 3:15pm",
+              "pos": "",
+              "terminal":"",
+              "gate":"",
+              "arr":"5/4 5:25pm"
               }]
           },
           {
@@ -15,7 +22,14 @@
             "endDate" : "7/24/18",
             "flight-info": [{
               "res-num": "GK34L",
-              "flight-num": "SW 1879"
+              "flight-num": "SW 1879",
+              "from": "Denver International Airport",
+              "to": "Boston Logan International Airport",
+              "dep": "7/21 1:30pm",
+              "pos": "",
+              "terminal":"",
+              "gate":"",
+              "arr":"7/21 7:05pm"
               }]
           },
           {
@@ -24,7 +38,14 @@
             "endDate" : "8/16/18",
             "flight-info": [{
               "res-num": "O3KL9",
-              "flight-num": "SW 2242"
+              "flight-num": "SW 2242",
+              "from": "Denver International Airport",
+              "to": "Austin-Bergstrom International Airport",
+              "dep": "8/15 7:35am",
+              "pos": "",
+              "terminal":"",
+              "gate":"",
+              "arr":"8/15 10:25am"
               }]
           }
         ]
