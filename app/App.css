@@ -164,7 +164,11 @@ a:hover{
   position:absolute;
   right:10px;
 }
-.other-link{
+.other-link a{
   text-decoration: none;
 }
+.other-link a:link {color: black;}      /* unvisited link */
+.other-link a:visited {color: black;}   /* visited link */
+.other-link a:hover {color: black;}     /* mouse over link */
+.other-link a:active {color: black;}    /* selected link */
 /* h5#arr_air */
