@@ -97,6 +97,9 @@ a:active {
   border-radius: 25px;
   border-bottom: 25px solid rgba(72,170,255,0.5);
 }
+a:hover{
+  text-decoration: none;
+}
 .booking h2{
   position: relative;
   top: 42%;

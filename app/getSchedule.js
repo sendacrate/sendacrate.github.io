@@ -16,17 +16,8 @@ $(document).ready (function(){
         document.getElementById("container").appendChild(iframe);
     }
   });
-  name= "Seattle"
 
 
-//   var frames = document.getElementsByTagName('myIframe');
-//
-// for (var i = 0; i < frames.length; i++){
-//
-//     fSrc = frames[i].src;
-//
-// }
-// for(var i=0;i<3;i++){
 $('#myIframe').attr('src', booking_url);
 
   // console.log(param1)
