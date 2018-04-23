@@ -165,7 +165,8 @@ a:hover{
   right:10px;
 }
 .other-link a{
-  text-decoration: none;
+  text-decoration: none !important;
+  color: black !important;
 }
 .other a:link {color: black;}      /* unvisited link */
 .other a:visited {color: black;}   /* visited link */
