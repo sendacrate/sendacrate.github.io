@@ -164,4 +164,7 @@ a:hover{
   position:absolute;
   right:10px;
 }
+.other-link{
+  text-decoration: none;
+}
 /* h5#arr_air */
