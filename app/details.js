@@ -11,8 +11,9 @@ $(document).ready(function() {
   $.getJSON(url, function(data) {
       for(var i=0;i<data.bookings.length;i++){
         city= data.bookings[i]['city']
-        resnum= data.bookings[i][city]['flight-info']['res-num']
-        flightnum = data.bookings[i][city]['flight-info']['flight-num']
+        console.log(data.bookings[i]['flight-info']['res-num'])
+        resnum= data.bookings[i]['flight-info']['res-num']
+        flightnum = data.bookings[i]['flight-info']['flight-num']
         if (param1 == city) {
             document.getElementById('res-num').innerHTML = resnum
             document.getElementById('flight-num').innerHTML = flightnum
