@@ -181,12 +181,12 @@ a:hover{
 .radial-progress {
 	@circle-size: 120px;
 	@circle-background: #d6dadc;
-	@circle-color: rgba(72,170,255,1.0);
+	@circle-color: #97a71d;
 	@inset-size: 90px;
 	@inset-color: #fbfbfb;
 	@transition-length: 1s;
 	@shadow: 6px 6px 10px rgba(0,0,0,0.2);
-	@percentage-color: rgba(72,170,255,1.0);
+	@percentage-color: #97a71d;
 	@percentage-font-size: 22px;
 	@percentage-text-width: 57px;
 
