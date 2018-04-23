@@ -1,5 +1,5 @@
 $(document).ready (function(){
-  url = '/itin.json';
+  url = '/app/itin.json';
   // console.log("hi")
 
   $.getJSON(url, function(data) {

@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    url = '/itin.json';
+    url = '/app/itin.json';
     // console.log("hi")
     var param1 = getParamValue('city');
     $.getJSON(url, function(data) {
