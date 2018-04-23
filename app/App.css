@@ -159,7 +159,7 @@ a:hover{
 .other p{
   margin-bottom: 0;
 }
-.arrow{
+#arrow{
   position:absolute;
   right:10px;
 }
