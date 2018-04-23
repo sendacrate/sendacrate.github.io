@@ -3,17 +3,29 @@
           {
             "city": "Seattle",
             "startDate": "5/4/18",
-            "endDate" : "5/7/18"
+            "endDate" : "5/7/18",
+            "flight-info": [{
+              "res-num": "WX4H6",
+              "flight-num": "SW 164"
+              }]
           },
           {
             "city": "Boston",
             "startDate": "7/21/18",
-            "endDate" : "7/24/18"
+            "endDate" : "7/24/18",
+            "flight-info": [{
+              "res-num": "GK34L",
+              "flight-num": "SW 1879"
+              }]
           },
           {
             "city": "Austin",
             "startDate": "8/15/18",
-            "endDate" : "8/16/18"
+            "endDate" : "8/16/18",
+            "flight-info": [{
+              "res-num": "O3KL9",
+              "flight-num": "SW 2242"
+              }]
           }
         ]
      }

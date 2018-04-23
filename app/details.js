@@ -1,15 +1,31 @@
 $(document).ready(function() {
 
   var param1 = getParamValue('city');
-  console.log("iuoihoh",param1)
+  // console.log("iuoihoh",param1)
   url = "/app/details.html?city="+param1
   $('#myIframe2').attr('src', url);
   document.getElementById('city').innerHTML = param1
+  url = '/app/itin.json';
+  // console.log("hi")
+
+  $.getJSON(url, function(data) {
+      for(var i=0;i<data.bookings.length;i++){
+        city= data.bookings[i]['city']
+        resnum= data.bookings[i][city]['flight-info']['res-num']
+        flightnum = data.bookings[i][city]['flight-info']['flight-num']
+        if (param1 == city) {
+            document.getElementById('res-num').innerHTML = resnum
+            document.getElementById('flight-num').innerHTML = flightnum
+                // booking_url = "booking.html?city="+name+"&param2=22"
+                // $('#myIframe').attr('src', booking_url);
+        }
+      }
+    })
 })
 function myFunction(){
   var param1 = getParamValue('city');
-  url = "/app/details.html?city="+param1
-  $('#myIframe2').attr('src', url);
+  // url = "/app/details.html?city="+param1
+  // $('#myIframe2').attr('src', url);
   // window.location.href = "/app/details.html";
   window.top.location.href ="/app/details.html?city="+param1;
 }
