@@ -1,0 +1,108 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 10px;
+}
+
+.App-header {
+  background-color: rgba(72,170,255,1.0);
+  height: 50px;
+  padding-top: 7px;
+  padding-bottom: 70px;
+  margin-top: -10px;
+  color: white;
+}
+
+.App-title {
+  background-color: rgba(72,170,255,1.0);
+  font-family: 'PT Sans', sans-serif;
+  font-size: 2em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.links {
+  padding: 30px;
+  display: flex;
+  width: 100%;
+}
+.itin {
+  /* padding: 30px; */
+  width: 50%;
+}
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.nhi{
+  background-color: whitesmoke;
+}
+
+ul.header1 li {
+  display: inline;
+  list-style-type: none;
+  margin: 0;
+}
+ul.header1 {
+  background-color: rgba(223,223,223,1.0);
+  padding: 0;
+}
+ul.header1 li a {
+  color: #FFF;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 20px;
+  display: inline-block;
+}
+.content {
+  background-color: #FFF;
+  padding: 20px;
+}
+.content h2 {
+  padding: 0;
+  margin: 0;
+}
+.content li {
+  margin-bottom: 10px;
+}
+.active {
+  background-color: rgba(72,170,255,0.5);
+  color: #000;
+}
+/* a:active{
+  color: #000;
+} */
+.nav .header1 .active {
+  color: #000;
+  font-weight: bold;
+  /* text-decoration: none; */
+  padding: 20px;
+  display: inline-block;
+}
+a:active {
+    background-color: rgba(72,170,255,0.5);
+}
+.booking{
+  width: 200px;
+  height: 200px;
+  background-color: rgba(223,223,223,1.0);
+  text-align: center;
+  margin-right: auto; margin-left: auto;
+  border-radius: 25px;
+  border-bottom: 25px solid rgba(72,170,255,0.5);
+}
+.booking h2{
+  position: relative;
+  top: 42%;
+}
+
+.booking p{
+  position: relative;
+  top: 76%;
+}

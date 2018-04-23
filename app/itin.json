@@ -1,0 +1,19 @@
+{
+  "bookings": [
+          {
+            "city": "Seattle",
+            "startDate": "5/4/18",
+            "endDate" : "5/7/18"
+          },
+          {
+            "city": "Boston",
+            "startDate": "7/21/18",
+            "endDate" : "7/24/18"
+          },
+          {
+            "city": "Austin",
+            "startDate": "8/15/18",
+            "endDate" : "8/16/18"
+          }
+        ]
+     }

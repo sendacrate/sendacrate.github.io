@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- <link rel="stylesheet" href="/resources/css/main.css" /> -->
+    <link rel="icon" href="plane.png">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="App.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="getSchedule.js"></script>
+    <script src="booking.js"></script>
+    <title>FellowTrips</title>
+</head>
+<script>
+  var param1 = getParamValue('city');
+  var booking_url = "booking.html?city="+param1
+</script>
+<body>
+
+    <a href=booking_url><div class = "booking" id="booking">
+      <!-- <p>hello</p> -->
+      <h2 id="city"></h2>
+      <p id="date"></p>
+
+    </div>
+    </a>
+    <!-- <div className="content">
+    <Route exact path="/" component={Home}/>
+       <Route path="/past" component={Stuff}/>
+       <Route path="/budget" component={Contact}/>
+    </div> -->
+  </div>
+</body>
+</html>
