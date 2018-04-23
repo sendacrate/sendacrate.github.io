@@ -167,8 +167,8 @@ a:hover{
 .other-link a{
   text-decoration: none;
 }
-.other-link a:link {color: black;}      /* unvisited link */
-.other-link a:visited {color: black;}   /* visited link */
-.other-link a:hover {color: black;}     /* mouse over link */
-.other-link a:active {color: black;}    /* selected link */
+.other a:link {color: black;}      /* unvisited link */
+.other a:visited {color: black;}   /* visited link */
+.other a:hover {color: black;}     /* mouse over link */
+.other a:active {color: black;}    /* selected link */
 /* h5#arr_air */
