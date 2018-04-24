@@ -20,13 +20,13 @@ $(document).ready(function() {
       mm = '0'+mm
   }
 
-  today = mm + '/' + dd + '/' + yy;
+  today = new Date(mm + '/' + dd + '/' + yy);
   console.log(today);
   $.getJSON(url, function(data) {
       for(var i=0;i<data.bookings.length;i++){
-        start_dt = data.bookings[i]['startDate']
+        start_dt = new Date(data.bookings[i]['startDate']);
         console.log(start_dt);
-        if (start_dt>today){
+        if (start_dt>=today){
 
 
         date = data.bookings[i]['startDate']+"-"+data.bookings[i]['endDate']
