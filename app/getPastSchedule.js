@@ -20,7 +20,7 @@ $(document).ready (function(){
         start_dt = new Date(data.bookings[i]['startDate']);
         if (start_dt<=today){
         city= data.bookings[i]['city']
-        booking_url = "booking.html?city="+city
+        booking_url = "pastBooking.html?city="+city
         var iframe = document.createElement('iframe');
         iframe.frameBorder=0;
         iframe.width="250px";
