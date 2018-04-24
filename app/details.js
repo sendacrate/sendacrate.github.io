@@ -21,11 +21,11 @@ $(document).ready(function() {
   }
 
   today = new Date(mm + '/' + dd + '/' + yy);
-  console.log(today);
+  // console.log(today);
   $.getJSON(url, function(data) {
       for(var i=0;i<data.bookings.length;i++){
         start_dt = new Date(data.bookings[i]['startDate']);
-        console.log(start_dt);
+        // console.log(start_dt);
         if (start_dt>=today){
 
 
