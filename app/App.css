@@ -193,6 +193,11 @@ input[type=submit] {
 input[type=submit]:hover {
     background-color: #45a049;
 }
+
+.budget{
+  width: 50%;
+  margin:0 auto;
+}
 /* .other a:link {color: black;}
 .other a:visited {color: black;}
 .other a:hover {color: black;}
