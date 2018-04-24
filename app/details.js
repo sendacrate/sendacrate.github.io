@@ -7,9 +7,27 @@ $(document).ready(function() {
   // document.getElementById('city').innerHTML = param1
   url = '/app/itin.json';
   // console.log("hi")
+  var today = new Date();
+  var dd = today.getDate();
+  var mm = today.getMonth()+1; //January is 0!
+  var yy = today.getFullYear().substring(2,4);
 
+  if(dd<10) {
+      dd = '0'+dd
+  }
+
+  if(mm<10) {
+      mm = '0'+mm
+  }
+
+  today = mm + '/' + dd + '/' + yy;
+  console.log(today);
   $.getJSON(url, function(data) {
       for(var i=0;i<data.bookings.length;i++){
+        start_dt = data.bookings[i]['startDate']
+        if (start_dt>today){
+
+
         date = data.bookings[i]['startDate']+"-"+data.bookings[i]['endDate']
         city= data.bookings[i]['city']
         console.log(data.bookings[i]['flight-info'][0]['res-num'])
@@ -38,7 +56,7 @@ $(document).ready(function() {
         }
 
       }
-
+      }
     })
 })
 function myFunction(){
