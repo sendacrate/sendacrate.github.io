@@ -181,7 +181,7 @@ input[type=text], select {
 
 input[type=submit] {
     width: 100%;
-    background-color: #4CAF50;
+    background-color: rgba(72,170,255,0.5);
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -191,7 +191,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    background-color: #45a049;
+    background-color: rgba(72,170,255,1.0);
 }
 
 .budget{
