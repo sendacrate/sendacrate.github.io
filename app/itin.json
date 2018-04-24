@@ -1,6 +1,22 @@
 {
   "bookings": [
           {
+            "city": "Portland",
+            "startDate": "03/12/18",
+            "endDate" : "03/17/18",
+            "flight-info": [{
+              "res-num": "G5KYT",
+              "flight-num": "Frontier 29",
+              "from": "Denver International Airport",
+              "to": "Portland International Airport",
+              "dep": "3/12 9:40am",
+              "pos": "Group 3",
+              "terminal":"B",
+              "gate":"32",
+              "arr":"3/12 11:30am"
+              }]
+          },
+          {
             "city": "Seattle",
             "startDate": "05/04/18",
             "endDate" : "05/07/18",
