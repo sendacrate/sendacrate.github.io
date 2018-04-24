@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- <link rel="stylesheet" href="/resources/css/main.css" /> -->
+    <link rel="icon" href="plane.png">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="App.css">
+    <!-- <link href="booking.html"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- <script src="getSchedule.js"></script>
+    <script src="booking.js"></script>
+    <script src="details.js"></script> -->
+    <title>FellowTrips</title>
+</head>
+<body>
+
+<!-- <h3>Using CSS to style an HTML Form</h3> -->
+<div class="App">
+  <header class="App-header">
+    <h1 class="App-title">FellowTrips</h1>
+  </header>
+  <div class="nav">
+  <ul class="header1">
+  <li><a href="/app/index.html" >Upcoming</a></li>
+    <li><a href="/app/past.html">Past Trips</a></li>
+    <li><a href="/app/budget.html" class="active">Budget Tracker</a></li>
+  </ul>
+  </div>
+<div>
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+</div>
+</body>
+</html>
