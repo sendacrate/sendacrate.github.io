@@ -7,31 +7,29 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="App.css">
-    <link href="pastBooking.html">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="getPastSchedule.js"></script>
-    <script src="past.js"></script>
-    <script src="budget.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/1.6.1/less.min.js"></script>
+    <script src="booking.js"></script>
+    <script src="pastDetails.js"></script>
     <title>FellowTrips</title>
 </head>
+<script>
+  var param1 = getParamValue('city');
+  var booking_url = "booking.html?city="+param1
+  // var duh = document.getElementById("city").textContent;
+  // console.log("hiii",param1)
+</script>
 <body>
-  <div class="App">
-    <header class="App-header">
-      <h1 class="App-title">FellowTrips</h1>
-    </header>
-    <div class="nav">
-    <ul class="header1">
-    <li><a href="/app/index.html" >Upcoming</a></li>
-      <li><a href="/app/past.html" class="active">Past Trips</a></li>
-      <li><a href="/app/budget.html">Budget Tracker</a></li>
-    </ul>
-    </div>
 
-    <div class = "container" id = "container">
-      <!-- <iframe id="myIframe" src="" height="250px"  width="250px" scrolling="yes" frameborder="0"></iframe> -->
+    <a onclick="myFunction()"><div class = "booking" id="booking">
+      <!-- <p>hello</p> -->
+      <h2 id="city"></h2>
+      <p id="date"></p>
+
     </div>
+    </a>
+
     <!-- <div className="content">
     <Route exact path="/" component={Home}/>
        <Route path="/past" component={Stuff}/>
@@ -39,4 +37,5 @@
     </div> -->
   </div>
 </body>
+
 </html>
