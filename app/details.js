@@ -10,7 +10,7 @@ $(document).ready(function() {
   var today = new Date();
   var dd = today.getDate();
   var mm = today.getMonth()+1; //January is 0!
-  var yy = today.getFullYear().substring(2,4);
+  var yy = String(today.getFullYear()).substring(2,4);
 
   if(dd<10) {
       dd = '0'+dd
