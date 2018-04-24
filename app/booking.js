@@ -11,13 +11,13 @@ $(document).ready(function() {
               document.getElementById('date').innerHTML = date
                   // booking_url = "booking.html?city="+name+"&param2=22"
                   // $('#myIframe').attr('src', booking_url);
-              console.log(param1)
-          } else {
-              console.log("nah")
-        }
+              // console.log(param1)
+        //   } else {
+        //       console.log("nah")
+        // }
         // city = data.bookings[1]['city']
 
-        console.log(city)
+        // console.log(city)
 
         // console.log()
         // console.log("hi")
