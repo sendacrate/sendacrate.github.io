@@ -14,7 +14,7 @@ $(document).ready(function() {
               // console.log(param1)
         //   } else {
         //       console.log("nah")
-        // }
+        }
         // city = data.bookings[1]['city']
 
         // console.log(city)
