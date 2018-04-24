@@ -1,0 +1,68 @@
+"user1": {
+    "bookings": [
+            {
+              "city": "Portland",
+              "startDate": "03/12/18",
+              "endDate" : "03/17/18",
+              "flight-info": [{
+                "res-num": "G5KYT",
+                "flight-num": "Frontier 29",
+                "from": "Denver International Airport",
+                "to": "Portland International Airport",
+                "dep": "3/12 9:40am",
+                "pos": "Group 3",
+                "terminal":"B",
+                "gate":"32",
+                "arr":"3/12 11:30am"
+                }]
+            },
+            {
+              "city": "Seattle",
+              "startDate": "05/04/18",
+              "endDate" : "05/07/18",
+              "flight-info": [{
+                "res-num": "WX4H6",
+                "flight-num": "SW 164",
+                "from": "Denver International Airport",
+                "to": "Seattle-Tacoma International Airport",
+                "dep": "5/4 3:15pm",
+                "pos": "",
+                "terminal":"",
+                "gate":"",
+                "arr":"5/4 5:25pm"
+                }]
+            },
+            {
+              "city": "Boston",
+              "startDate": "07/21/18",
+              "endDate" : "07/24/18",
+              "flight-info": [{
+                "res-num": "GK34L",
+                "flight-num": "SW 1879",
+                "from": "Denver International Airport",
+                "to": "Boston Logan International Airport",
+                "dep": "7/21 1:30pm",
+                "pos": "",
+                "terminal":"",
+                "gate":"",
+                "arr":"7/21 7:05pm"
+                }]
+            },
+            {
+              "city": "Austin",
+              "startDate": "08/15/18",
+              "endDate" : "08/16/18",
+              "flight-info": [{
+                "res-num": "O3KL9",
+                "flight-num": "SW 2242",
+                "from": "Denver International Airport",
+                "to": "Austin-Bergstrom International Airport",
+                "dep": "8/15 7:35am",
+                "pos": "",
+                "terminal":"",
+                "gate":"",
+                "arr":"8/15 10:25am"
+                }]
+            }
+          ]
+       }
