@@ -1,52 +1,45 @@
 $(document).ready(function() {
+    url = '/app/itin.json';
+    // console.log("hi")
+    var param1 = getParamValue('city');
+    var today = new Date();
+    var dd = today.getDate();
+    var mm = today.getMonth()+1; //January is 0!
+    var yy = String(today.getFullYear()).substring(2,4);
 
-  var param1 = getParamValue('city');
-  // console.log("iuoihoh",param1)
-  url = "/app/past.html?city="+param1
-  $('#myIframe2').attr('src', url);
-  // document.getElementById('city').innerHTML = param1
-  url = '/app/itin.json';
+    if(dd<10) {
+        dd = '0'+dd
+    }
 
-  // console.log(today);
-  $.getJSON(url, function(data) {
-      for(var i=0;i<data.bookings.length;i++){
+    if(mm<10) {
+        mm = '0'+mm
+    }
+
+    today = new Date(mm + '/' + dd + '/' + yy);
+    $.getJSON(url, function(data) {
+        for(var i=0;i<data.bookings.length;i++){
+          start_dt = new Date(data.bookings[i]['startDate']);
+          // console.log(start_dt);
+          if (start_dt<=today){
+          city= data.bookings[i]['city']
+          date = data.bookings[i]['startDate']+"-"+data.bookings[i]['endDate']
+          if (param1 == city) {
+              document.getElementById('city').innerHTML = city
+              document.getElementById('date').innerHTML = date
+                  // booking_url = "booking.html?city="+name+"&param2=22"
+                  // $('#myIframe').attr('src', booking_url);
+              // console.log(param1)
+          }
+        // city = data.bookings[1]['city']
+
+        // console.log(city)
+
+        // console.log()
+        // console.log("hi")
 
 
-        date = data.bookings[i]['startDate']+"-"+data.bookings[i]['endDate']
-        city= data.bookings[i]['city']
-        console.log(data.bookings[i]['flight-info'][0]['res-num'])
-        resnum= data.bookings[i]['flight-info'][0]['res-num']
-        flightnum = data.bookings[i]['flight-info'][0]['flight-num']
-        dep_airport= data.bookings[i]['flight-info'][0]['from']
-        dep_dt = data.bookings[i]['flight-info'][0]['dep']
-        board_pos= data.bookings[i]['flight-info'][0]['pos']
-        terminal = data.bookings[i]['flight-info'][0]['terminal']
-        gate= data.bookings[i]['flight-info'][0]['gate']
-        arr_airport = data.bookings[i]['flight-info'][0]['to']
-        arr_dt = data.bookings[i]['flight-info'][0]['arr']
-        if (param1 == city) {
-            document.getElementById('res-num').innerHTML = resnum
-            document.getElementById('flight-num').innerHTML = flightnum
-            document.getElementById('dep-air').innerHTML = dep_airport
-            document.getElementById('dep').innerHTML = dep_dt
-            document.getElementById('pos').innerHTML = board_pos
-            document.getElementById('terminal').innerHTML = terminal
-            document.getElementById('gate').innerHTML = gate
-            document.getElementById('arr').innerHTML = arr_dt
-            document.getElementById('arr-air').innerHTML = arr_airport
-            document.getElementById('city-det').innerHTML = param1+", "+date
-                // booking_url = "booking.html?city="+name+"&param2=22"
-                // $('#myIframe').attr('src', booking_url);
-        }
-
+        // console.log(param1)
       }
-
-    })
+        }
+    });
 })
-function myFunction(){
-  var param1 = getParamValue('city');
-  // url = "/app/details.html?city="+param1
-  // $('#myIframe2').attr('src', url);
-  // window.location.href = "/app/details.html";
-  window.top.location.href ="/app/past.html?city="+param1;
-}
