@@ -25,6 +25,7 @@ $(document).ready(function() {
   $.getJSON(url, function(data) {
       for(var i=0;i<data.bookings.length;i++){
         start_dt = data.bookings[i]['startDate']
+        console.log(start_dt);
         if (start_dt>today){
 
 
