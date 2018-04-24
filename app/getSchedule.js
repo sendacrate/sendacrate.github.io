@@ -17,8 +17,8 @@ $(document).ready (function(){
   today = new Date(mm + '/' + dd + '/' + yy);
   $.getJSON(url, function(data) {
       for(var i=0;i<data.bookings.length;i++){
-        if (start_dt>=today){
         start_dt = new Date(data.bookings[i]['startDate']);
+        if (start_dt>=today){
         city= data.bookings[i]['city']
         booking_url = "booking.html?city="+city
         var iframe = document.createElement('iframe');
